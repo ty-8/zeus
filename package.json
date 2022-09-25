@@ -20,7 +20,9 @@
     "turbo": "latest"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,html,css}": ["pnpm lint"]
+    "*.{js,jsx,ts,tsx,md,html,css}": [
+      "prettier --write"
+    ]
   },
   "engines": {
     "node": ">=14.0.0"
